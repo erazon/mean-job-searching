@@ -1,0 +1,13 @@
+<br />
+<button routerLink="/job-opening/edit/{{jobOpening._id}}">Edit</button>&nbsp;
+<button (click)="onDeleteClick(jobOpening._id)">Delete</button>&nbsp;
+<br />
+<h1>{{jobOpening.title}}</h1>
+<div>{{pageMessage}}</div>
+<div>
+    <label>Salary: </label> {{jobOpening.salary | currency}}<br/>
+    <label>Description: </label> {{jobOpening.description}}<br/>
+    <label>Experience: </label> {{jobOpening.experience}}<br/>
+    <label>Skills: </label> {{jobOpening.skills}}<br/>
+    <label>Post Date: </label> {{jobOpening.postDate | date:'MM/dd/YYYY'}}<br/>
+</div>

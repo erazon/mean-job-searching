@@ -1,0 +1,33 @@
+<h1>{{pageTitle}} job opening</h1>
+<br />
+<p>{{pageMessage}}</p>
+<form [formGroup]="jobOpeningForm" (ngSubmit)="onSubmit()">
+    <div>
+        <div>Title</div>
+        <div><input formControlName="title" placeholder="Title" /></div>
+    </div>
+    <div>
+        <div>Salary</div>
+        <div><input formControlName="salary" placeholder="Salary" /></div>
+    </div>
+    <div>
+        <div>Description</div>
+        <div><input formControlName="description" placeholder="Description" /></div>
+    </div>
+    <div>
+        <div>Experience</div>
+        <div><input formControlName="experience" placeholder="Experience" /></div>
+    </div>
+    <div>
+        <div>Skills</div>
+        <div><input formControlName="skills" placeholder="Skills" /></div>
+    </div>
+    <div>
+        <div>Post Date</div>
+        <div><input formControlName="postDate" placeholder="Post Date" /></div>
+    </div>
+    <br />
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
